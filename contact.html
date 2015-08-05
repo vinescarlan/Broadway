@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Broadway Website Improved Version | Codecademy.com "Website Projects"</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='stylesheet' href='style.css' />
+</head>
+
+<body>
+  <div class="header">
+    <div class="container">
+      <ul class="nav">
+        <a href="index.html"><li>About</li></a>
+        <a href="work.html"><li>Work</li></a>
+        <a href="team.html"><li>Team</li></a>
+        <a href="contact.html"><li>Contact</li></a>
+      </ul>
+    </div>
+  </div>
+
+  <div class="contact">
+    <div class="container">
+      <form name="messageForm" action="contact.html" method="post" onsubmit="return validateAgain()">
+        <h2>Send us a message! Use this form for feedback, requesting quote, and FAQ's</h2>
+        <div class="status"><h2>Message successfully sent!</h2></div>
+        <p>*required fields</p>
+        <h3>Name *</h3>
+        <input type="text" name="name" maxlength="20" autofocus><span></span>
+        <h3>Subject *</h3>
+        <input type="text" name="subject" maxlength="30">
+        <span></span>
+        <h3>Email *</h3>
+        <input type="text" name="email">
+        <span></span>
+        <h3>Website</h3>
+        <input type="text" name="website">
+        <span></span>
+        <h3>Message *</h3>
+        <textarea name="message" maxlength="1000"></textarea>
+        <span></span>
+        <br/>
+        <br/>
+        <input type="submit" name="submit" value="SEND">
+        <span></span>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/validate.js"></script>
+  <div class="footer">
+    <div class="container">
+      <p>&copy; CodeCademy - Broadway 2015</p>
+      <p>This site is an improved version of broadway website of
+        <a href="https://www.codecademy.com/courses/html-css-prj" target="_blank">
+          Codecademy.com "Make a Website Projects"
+        </a>
+      </p>
+      <p>Improved by Melvin Escarlan | 2015 </p>
+    </div>
+  </div>
+</body>
+
+</html>
